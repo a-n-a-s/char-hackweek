@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        flex-direction: column;
+        background: #BAB6B1;
+      }
+
+      .body {
+        width: 120px;
+        height: 180px;
+        background: #ee2026;
+        border-radius: 90px 80px 20px 20px;
+        position: relative;
+        border: 2px solid black;
+      }
+      .body::before {
+        content: "";
+        width: 40px;
+        height: 80px;
+        background: #eb212a;
+        position: absolute;
+        right: -30px;
+        top: 60px;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+      .glass {
+        width: 75px;
+        height: 45px;
+        background: #97c8da;
+        border-radius: 20px;
+        position: absolute;
+        top: 35px;
+        left: 15px;
+      }
+      .legs {
+        display: flex;
+        gap: 12px;
+      }
+      .bottom {
+        width: 40px;
+        height: 40px;
+        background: #ee2026;
+        border-radius: 0px 0px 40px 40px;
+        position: relative;
+        border: 2px solid black;
+        top: -5px;
+        z-index: -1;
+      }
+      .shadow {
+        width: 120px;
+        height: 30px;
+        border-radius: 55%;
+        background: #363a3b;
+        position: absolute;
+        bottom: 230px;
+        z-index: -2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Among US</h1>
+    <div class="body">
+      <div class="glass"></div>
+    </div>
+    <div class="legs">
+      <div class="bottom"></div>
+      <div class="bottom"></div>
+    </div>
+    <div class="shadow"></div>
+  </body>
+</html>
